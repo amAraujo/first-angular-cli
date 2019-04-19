@@ -1,4 +1,4 @@
-import { User } from './model/user';
+import { User } from './models/user';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'Tasks';
   upperText:string = 'Display uppercase text';
   lowerText:string = 'DISPLAY LOWERCASE TEXT';
