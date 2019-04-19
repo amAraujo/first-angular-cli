@@ -1,3 +1,4 @@
+import { User } from './model/user';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tasks';
+  upperText:string = 'Display uppercase text';
+  lowerText:string = 'DISPLAY LOWERCASE TEXT';
+  percentValue:number = 0.34;
+  date:Date = new Date();
+  money:number = 10;
+
+  user: User = {
+    name: 'Arthur',
+    age: 26
+  }
 }
