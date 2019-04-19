@@ -14,3 +14,13 @@
 {{ date | date : 'dd/MM/yyyy' }}
 <br><br>
 {{ money | currency }}
+<br><br>
+<div *ngIf="isAdmin">
+  Adminstrator
+</div>
+<br>
+<div [ngSwitch]="profile">
+  <div *ngSwitchCase="1">You can read & write</div>
+  <div *ngSwitchCase="2">You can read</div>
+  <div *ngSwitchDefault>Go back, please!</div>
+</div>
