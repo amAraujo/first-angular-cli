@@ -1,5 +1,5 @@
 // ng g component task-list (Comando para criar este component)
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-task-list',
@@ -10,6 +10,7 @@ export class TaskListComponent {
 
   tasks = [];
   task = "";
+  isAdmin = true;
 
   add():void {
     if (this.task) {
